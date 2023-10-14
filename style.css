@@ -41,6 +41,7 @@ body {
 }
 
 .rating-component {
+    margin: 4rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -50,6 +51,7 @@ body {
 }
 
 .thanks {
+    margin: 4rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
