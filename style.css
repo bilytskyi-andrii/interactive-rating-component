@@ -1,3 +1,19 @@
+:root {
+    --ff-regular: 'Overpass', sans-serif;
+    --fs-regular: 15px;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --clr-primary-400: hsl(25, 97%, 53%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(217, 12%, 63%);
+    --clr-neutral-300: hsl(216, 12%, 54%);
+    --clr-neutral-700: hsl(213, 19%, 18%);
+    --clr-neutral-900: hsl(216, 12%, 8%);
+}
+
 *,
 *::before,
 *::after {
