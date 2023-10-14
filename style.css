@@ -1,6 +1,6 @@
 :root {
     --ff-regular: 'Overpass', sans-serif;
-    --fs-regular: 15px;
+    --fs-regular: 14px;
 
     --fw-regular: 400;
     --fw-bold: 700;
@@ -11,6 +11,7 @@
     --clr-neutral-200: hsl(217, 12%, 63%);
     --clr-neutral-300: hsl(216, 12%, 54%);
     --clr-neutral-700: hsl(213, 19%, 18%);
+    --clr-neutral-800: #1E252F;
     --clr-neutral-900: hsl(216, 12%, 8%);
 }
 
@@ -29,4 +30,91 @@ img,
 svg {
     display: block;
     max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: var(--ff-regular);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-300);
+    background: var(--clr-neutral-900);
+}
+
+.rating-component {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--clr-neutral-800);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.rating-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background: var(--clr-neutral-700);
+    font-weight: var(--fw-bold);
+}
+
+.rating-row > .circle:hover {
+    background: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+button {
+    background: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    border: none;
+    height: 2.5rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: var(--fw-bold);
+}
+
+button:hover {
+    background: var(--clr-neutral-100);
+    color: var(--clr-primary-400);
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-bold);
+    font-size: 1.6rem;
+}
+
+@media (min-width: 600px) {
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .rating-component {
+        max-width: 24rem;
+    }
 }
